@@ -1,7 +1,5 @@
 package com.Yassine_amine;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.Test;
 
 import com.Produit;

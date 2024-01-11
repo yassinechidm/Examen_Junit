@@ -42,7 +42,7 @@ public class ProduitService {
     }
 
     private void validerUniciteProduit(Produit produit) throws ProduitException {
-        if (produits.values().stream().anyMatch(p -> p.getId().equals(produit.getId()) || p.getNom().equals(produit.getNom()))) {
+        if (produits.values().stream().anyMatch(p -> p.getId().equals(produit.getId()) || p.getId().equals(produit.getId()))) {
             throw new ProduitException();
         }
     }
