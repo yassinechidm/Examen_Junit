@@ -12,7 +12,7 @@ public class ProduitService {
         this.produits = new HashMap<>();
     }
 
-        public void ajouterProduit(Produit produit) throws ProduitException {
+    public void ajouterProduit(Produit produit) throws ProduitException {
         validerUniciteProduit(produit);
         validerDonneesProduit(produit);
         produits.put(produit.getId(), produit);
